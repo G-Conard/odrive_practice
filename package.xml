@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>odrive_tutorial</name>
+  <name>odrive_practice</name>
   <version>0.0.0</version>
-  <description>Wiki ROS tutorials applied to ODrive</description>
+  <description>Wiki ROS tutorials applied to ODrive, and other experimentation</description>
 
   <maintainer email="conardg@lafayette.edu">Gabrielle Conard</maintainer>
 
@@ -12,7 +12,8 @@
   <!-- Url tags are optional, but multiple are allowed, one per tag -->
   <!-- Optional attribute type can be: website, bugtracker, or repository -->
   <!-- Example: -->
-  <!-- <url type="website">http://wiki.ros.org/odrive_tutorial</url> -->
+  <!-- <url type="website">http://wiki.ros.org</url> -->
+  <url type="website">https://github.com/G-Conard/odrive_practice</url>
 
   <author email="conardg@lafayette.edu">Gabrielle Conard</author>
 

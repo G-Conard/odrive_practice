@@ -2,7 +2,7 @@
 
 #basics
 import rospy
-roslib.load_manifest('odrive_tutorial')
+roslib.load_manifest('odrive_practice')
 
 #load all the message types you need to publish or subscribe to
 from std_msgs.msg import String

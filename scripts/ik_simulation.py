@@ -56,7 +56,7 @@ class InverseKinematics:
 		self.length_f = 14.107
 		self.length_t = 12.233
 		self.theta_K_shift = 16.6
-		self.theta_HKP_shift = 0
+		self.theta_HKP_shift = 1.2
 		self.theta_H = 16.9
 		self.theta_t_shift = 15.8
 
@@ -104,11 +104,12 @@ class InverseKinematics:
 		print(self.theta_t * (180/pi))
 
 		x = cumsum([self.origin[0],
-			self.length_f * sin(self.theta_f),
-			self.length_t * sin(self.theta_t)])
-		y = cumsum([self.origin[1],
 			self.length_f * cos(self.theta_f),
-			self.length_t * cos(self.theta_t)])
+			self.length_t * cos(self.theta_f + ((2 * pi) - abs(self.theta_t)))])
+		print(cos(self.theta_f + ((2 * pi) - self.theta_t)))
+		y = cumsum([self.origin[1],
+			self.length_f * sin(self.theta_f),
+			self.length_t * sin(self.theta_f + ((2 * pi) - abs(self.theta_t)))])
 
 		print("x:" + str(x))
 		print("y:" + str(y))
